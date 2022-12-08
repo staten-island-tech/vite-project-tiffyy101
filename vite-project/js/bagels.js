@@ -36,7 +36,7 @@ const bagels = [
         img: "https://img.sunset02.com/sites/default/files/styles/4_3_horizontal_-_1200x900/public/smoked-salmon-bagel-su.jpg"
     },
     {
-        name: "Bacon Egg & Cheese Sandwhich",
+        name: "Bacon Egg & Cheese Bagel",
         info: "Crispy bacon pair with the fluffiest fried egg and slices of delicious gooey American cheese",  
         price: 6,
         img: "https://www.oliviascuisine.com/wp-content/uploads/2016/07/bacon-egg-and-cheese-1-735x1103.jpg"  
@@ -49,7 +49,7 @@ const bagels = [
     },
     {
         name: "Caprese Bagel",
-        info: "",
+        info: "Fresh grown tomatoes with creamy mozarella, topped with basils and balsamic vinegar",
         price: 12,
         img: "https://www.lastingredient.com/wp-content/uploads/2019/07/caprese-bagel3.jpg"
     }
