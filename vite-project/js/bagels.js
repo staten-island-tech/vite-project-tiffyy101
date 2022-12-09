@@ -52,5 +52,7 @@ const bagels = [
         info: "Fresh grown tomatoes with creamy mozarella, topped with basils and balsamic vinegar",
         price: 12,
         img: "https://www.lastingredient.com/wp-content/uploads/2019/07/caprese-bagel3.jpg"
-    }
-]
+    },
+];
+
+export { bagels };

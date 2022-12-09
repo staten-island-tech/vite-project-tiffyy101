@@ -1,5 +1,6 @@
-html,
-body * {
+head,
+body,
+* {
   font-family: 'Mali', cursive;
   -webkit-font-smoothing: antialiased;
   -moz-osz-font-smoothing: grayscale;
