@@ -11,11 +11,15 @@ body,
 }
 
 :root {
-  --light-brown: #ebaa4f;
+  --beige:
+    --light-brown: #ebaa4f;
   --h1: 3.052rem;
   --h2: 2.441rem;
   --h3: 1.953rem;
   --h4: 1.563rem;
+
+  --primary: var --light-brown;
+  --secondary: var --dark-brown;
 }
 
 .shop {
