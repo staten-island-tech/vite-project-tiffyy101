@@ -5,27 +5,35 @@ body,
   -webkit-font-smoothing: antialiased;
   -moz-osz-font-smoothing: grayscale;
   text-align: center;
-  color: rgb(131, 67, 21);
-  background-color: rgb(237, 208, 171);
-  margin-top: 60px;
 }
 
 :root {
-  --beige:
-    --light-brown: #ebaa4f;
+  --black: #000;
+  --beige: rgb(237, 208, 171);
+  --light-brown: #ebaa4f;
+  --brown: rgb(131, 67, 21);
+
+  --primary: var(--black);
+  --secondary: var(--brown);
+  --third: var(--beige);
+  --fourth: var(--light-brown);
+
   --h1: 3.052rem;
   --h2: 2.441rem;
   --h3: 1.953rem;
   --h4: 1.563rem;
-
-  --primary: var --light-brown;
-  --secondary: var --dark-brown;
 }
 
-.shop {
-  background-color: var (--light-brown);
+.main {
+  color: var(--secondary);
+  background-color: var(--third);
 }
 
 h1 {
-  font-size: var (--h1);
+  font-size: var(--h1);
+}
+
+.btn {
+  font-size: var(--h4);
+  border-radius: 20px;
 }
