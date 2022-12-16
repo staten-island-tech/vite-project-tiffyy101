@@ -1,9 +1,12 @@
 import "../styles/style.css";
-import { bagels } from "./bagels";
+import { menu } from "./menu";
 
-document.querySelector('#app').innerHTML = `
+document.getElementById('#app').innerHTML = `
 <div>
 <h1>Best Bagel Shop</h1>
 </div>`
 ;
-console.log(bagels);
+
+document.querySelector(".btn").addEventListener("click", function() {
+    console.log("menu");
+})
