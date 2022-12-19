@@ -9,9 +9,10 @@ const DOMSelectors = {
 
 };
 
-const createMenu = function (menu) {
-    document.getElementById("main").insertAdjacentHTML
-        ("beforeend",
+function createMenu() {
+    menu.forEach((menu) =>
+    DOMSelectors.display.insertAdjacentHTML
+    ("beforeend",
             `
           <div id="mainCard">
           <p><img src=${menu.img}></p>
@@ -21,9 +22,19 @@ const createMenu = function (menu) {
           <p id="outputText">Price: ${menu.info}</p>
           <button id="buy">Choose</button>
           </div>
-        `
+        ` )
         );
 }
+
+document.querySelector(".btn").addEventListener("click", function () {
+    if(document.body.classList.contains("cool")) {
+        document.body.classList.add("warm");
+        document.body.classList.remove("cool");
+    } else {
+        document.body.classList.add("cool");
+        document.body.classList.remove("warm");
+    }
+});
 
 menu
 .forEach((item) => createMenu(car));
