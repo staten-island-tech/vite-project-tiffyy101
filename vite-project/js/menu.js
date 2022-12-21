@@ -61,7 +61,7 @@ const menu = [
        price: 8,
        bestSeller: "no",
        drink: "yes",
-       img: "https://dempsters.ca/sites/default/files/styles/recipes_full_467x341_/public/2021-02/SundriedTomatoBagel-ChickenSandwich_Sitev2.jpg?itok=MAAegaRq"
+       img: "https://www.siftandsimmer.com/wp-content/uploads/2021/03/matcha-espresso-fusion2-683x1024.jpg"
     },
     {
         name: "Dalgona Coffee",

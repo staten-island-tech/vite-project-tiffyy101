@@ -20,7 +20,7 @@
 .cool {
   --black: #000;
   --light-purple: rgb(217, 187, 239);
-  --light-blue: rgb(141, 172, 230);
+  --light-blue: rgb(211, 226, 253);
   --dark-blue: rgb(4, 13, 56);
 
   --first: var(--black);
@@ -52,5 +52,5 @@ h1 {
   color: var(--second);
   font-size: var(--h4);
   border-radius: 20px;
-  border-color: var(--second);
+  border-color: var(--fourth);
 }
