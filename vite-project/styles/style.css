@@ -56,7 +56,7 @@ h1 {
   border-color: var(--fourth);
 }
 
-.mainCard {
-  margin: 10;
-  padding: 10;
+.img{
+  width: 20px;
+  height: 20px;
 }
