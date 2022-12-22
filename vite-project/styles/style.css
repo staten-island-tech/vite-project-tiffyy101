@@ -41,14 +41,14 @@ body,
 
 }
 
-.display {
+/* .display {
   display: flex;
   justify-content: space-between;
   flex-direction: row;
   flex-wrap: wrap;
   margin: 20;
   padding: 20;
-}
+} */
 
 .main {
   color: var(--second);
