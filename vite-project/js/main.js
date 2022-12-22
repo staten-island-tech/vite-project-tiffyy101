@@ -19,6 +19,17 @@ function createMenu() {
         );
 } 
 
+function food() {
+    menu
+    .forEach((food) => createMenu(food));
+}
+food();
+
+function bestSeller() {
+    
+}
+ 
+
 document.querySelector(".btn").addEventListener("click", function () {
     if(document.body.classList.contains("warm")) {
         document.body.classList.add("cool");
@@ -28,8 +39,7 @@ document.querySelector(".btn").addEventListener("click", function () {
         document.body.classList.remove("cool");
     }
 });
-menu
-.forEach((menu) => createMenu(menu));
+
 
 menu
 .filter((food) => food.bestSeller === "yes")
