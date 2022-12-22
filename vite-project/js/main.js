@@ -9,7 +9,7 @@ function createMenu(food) {
                 `          
           <div id="mainCard" class="mainCard">          
           <h2>${menu.name}</h2>
-          <p class="img" id="img"><img src=${menu.img}></p>
+          <img class="img" src="${menu.img}" />
           <p id="outputText">Price: ${menu.price}</p>
           <p id="outputText">Info: ${menu.info}</p>
           <button id="buy" class="buy">Choose</button>
