@@ -44,10 +44,10 @@ body,
 .display {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
   flex-direction: row;
   flex-wrap: wrap;
-  margin: auto;
+  margin: 20;
+  padding: 20;
 }
 
 .main {
