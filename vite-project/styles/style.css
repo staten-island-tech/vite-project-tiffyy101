@@ -36,7 +36,9 @@ body,
   -webkit-font-smoothing: antialiased;
   -moz-osz-font-smoothing: grayscale;
   text-align: center;
+  border-radius: 30px;
   background-color: var(--third);
+
 }
 
 .main {
@@ -51,6 +53,10 @@ h1 {
 .btn {
   color: var(--second);
   font-size: var(--h4);
-  border-radius: 20px;
   border-color: var(--fourth);
+}
+
+.mainCard {
+  margin: 10;
+  padding: 10;
 }

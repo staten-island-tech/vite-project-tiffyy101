@@ -7,28 +7,25 @@ function createMenu() {
     menu.forEach((menu) =>
     DOMSelectors.mainDiv.insertAdjacentHTML
     ("beforeend",
-            `
+            `          
+          <div id="mainCard" class="mainCard">          
+          <h2>${menu.name}</h2>
+          <p><img src=${menu.img}></p>
           <p id="outputText">Price: ${menu.price}</p>
           <p id="outputText">Info: ${menu.info}</p>
-          <button id="buy">Choose</button>
+          <button id="buy" class="buy">Choose</button>
           </div>
-
-          <div id="mainCard">
-          <p><img src=${menu.img}></p>
-          <h2>${menu.name}</h2>
         ` )    
         );
 } 
 
-
-
 document.querySelector(".btn").addEventListener("click", function () {
-    if(document.body.classList.contains("cool")) {
-        document.body.classList.add("warm");
-        document.body.classList.remove("cool");
-    } else {
+    if(document.body.classList.contains("warm")) {
         document.body.classList.add("cool");
         document.body.classList.remove("warm");
+    } else {
+        document.body.classList.add("warm");
+        document.body.classList.remove("cool");
     }
 });
 menu
