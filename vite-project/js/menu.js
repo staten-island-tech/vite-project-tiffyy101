@@ -6,7 +6,7 @@ const menu = [
         bestSeller: "no",
         drink: "no",
         jam: "no",
-        img: "public/plain.png"
+        img: "/plain.png"
     },
     {
         name: "Sesame Bagel",
@@ -15,7 +15,7 @@ const menu = [
         bestSeller: "yes",
         drink: "no",
         jam: "no",
-        img: "public/sesame.png"
+        img: "/sesame.png"
     },
     {
         name: "Cinnamon Raisan Bagel",
@@ -24,7 +24,7 @@ const menu = [
         bestSeller: "no",
         drink: "no",
         jam: "no",
-        img: "public/cinnamon.jpg"
+        img: "/cinnamon.jpg"
     },
     {
         name: "Everything Bagel",
@@ -33,7 +33,7 @@ const menu = [
         bestSeller: "yes",
         drink: "no",
         jam: "no",
-        img: "public/everything.webp"
+        img: "/everything.webp"
     },
     {
         name: "Jalapeno Cheddar Bagel",
@@ -42,7 +42,7 @@ const menu = [
         bestSeller: "no",
         drink: "no",
         jam: "no",
-        img: "public/cheddar.jpg"
+        img: "/cheddar.jpg"
     },
     {
         name: "Smoked Salmon Bagel",
@@ -51,7 +51,7 @@ const menu = [
         bestSeller: "yes",
         drink: "no",
         jam: "no",
-        img: "public/salmon.jpg"
+        img: "/salmon.jpg"
     },
     {
         name: "Bacon Egg & Cheese Bagel",
@@ -60,7 +60,7 @@ const menu = [
         bestSeller: "yes",
         drink: "no",
         jam: "no",
-        img: "public/bec.webp"  
+        img: "/bec.webp"  
     },
     {
        name: "Matcha Expresso Fusion", 
@@ -69,7 +69,7 @@ const menu = [
        bestSeller: "no",
        drink: "yes",
        jam: "no",
-       img: "public/match.jpg"
+       img: "/match.jpg"
     },
     {
         name: "Dalgona Coffee",
@@ -78,7 +78,7 @@ const menu = [
         bestSeller: "yes",
         drink: "yes",
         jam: "no",
-        img: "public/dalgona.jpg"
+        img: "/dalgona.jpg"
     },
     {
         name: "Strawberry Jam",
@@ -87,7 +87,7 @@ const menu = [
         bestSeller: "yes",
         drink: "no",
         jam: "yes",
-        img: "public/strawberry.jpg"
+        img: "/strawberry.jpg"
     },
     {
         name: "Orange Jam",
@@ -96,7 +96,7 @@ const menu = [
         bestSeller: "no",
         drink: "no",
         jam: "yes",
-        img: "public/orange.jpg"
+        img: "/orange.jpg"
     },
     {
         name: "Apple Jam",
@@ -105,7 +105,7 @@ const menu = [
         bestSeller: "no",
         drink: "no",
         jam: "yes",
-        img: "public/apple.jpg"
+        img: "/apple.jpg"
     }
 ];
 
