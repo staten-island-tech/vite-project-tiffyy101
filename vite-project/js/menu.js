@@ -5,8 +5,7 @@ const menu = [
         price: 2,
         bestSeller: "no",
         drink: "no",
-        jam: "no",
-        img: "/plain.png"
+        img: "https://www.einsteinbros.com/wp-content/uploads/2019/04/EBB-Bagel-Plain-800x700-1.png"
     },
     {
         name: "Sesame Bagel",
@@ -14,8 +13,7 @@ const menu = [
         price: 3,
         bestSeller: "yes",
         drink: "no",
-        jam: "no",
-        img: "/sesame.png"
+        img: "https://www.einsteinbros.com/wp-content/uploads/2019/04/EBB-Bagel-SesameSeed-800x700-1.png"
     },
     {
         name: "Cinnamon Raisan Bagel",
@@ -23,8 +21,7 @@ const menu = [
         price: 3,
         bestSeller: "no",
         drink: "no",
-        jam: "no",
-        img: "/cinnamon.jpg"
+        img: "https://cdn.shopify.com/s/files/1/0549/1117/2815/products/bagelista_cinnamonraisin_2_900x.jpg?v=1654008008"
     },
     {
         name: "Everything Bagel",
@@ -32,8 +29,7 @@ const menu = [
         price: 3,
         bestSeller: "yes",
         drink: "no",
-        jam: "no",
-        img: "/everything.webp"
+        img: "https://thebusybaker.ca/wp-content/uploads/2020/05/homemade-everything-bagels-fb-ig-7-scaled.jpg"
     },
     {
         name: "Jalapeno Cheddar Bagel",
@@ -41,8 +37,7 @@ const menu = [
         price: 5,
         bestSeller: "no",
         drink: "no",
-        jam: "no",
-        img: "/cheddar.jpg"
+        img: "https://thumbs.dreamstime.com/b/cheddar-jalapeno-bagel-delicious-cheese-rustic-wood-table-top-170935927.jpg"
     },
     {
         name: "Smoked Salmon Bagel",
@@ -50,8 +45,7 @@ const menu = [
         price: 12,
         bestSeller: "yes",
         drink: "no",
-        jam: "no",
-        img: "/salmon.jpg"
+        img: "https://img.sunset02.com/sites/default/files/styles/4_3_horizontal_-_1200x900/public/smoked-salmon-bagel-su.jpg"
     },
     {
         name: "Bacon Egg & Cheese Bagel",
@@ -59,8 +53,7 @@ const menu = [
         price: 6,
         bestSeller: "yes",
         drink: "no",
-        jam: "no",
-        img: "/bec.webp"  
+        img: "https://www.oliviascuisine.com/wp-content/uploads/2016/07/bacon-egg-and-cheese-1-735x1103.jpg"  
     },
     {
        name: "Matcha Expresso Fusion", 
@@ -68,8 +61,7 @@ const menu = [
        price: 8,
        bestSeller: "no",
        drink: "yes",
-       jam: "no",
-       img: "/match.jpg"
+       img: "https://www.siftandsimmer.com/wp-content/uploads/2021/03/matcha-espresso-fusion2-683x1024.jpg"
     },
     {
         name: "Dalgona Coffee",
@@ -77,8 +69,7 @@ const menu = [
         price: 3,
         bestSeller: "yes",
         drink: "yes",
-        jam: "no",
-        img: "/dalgona.jpg"
+        img: "https://www.acoupleofsips.com/wp-content/uploads/2020/05/caramel-dalgona-coffee.jpg"
     },
     {
         name: "Strawberry Jam",
@@ -86,8 +77,7 @@ const menu = [
         price: 10,
         bestSeller: "yes",
         drink: "no",
-        jam: "yes",
-        img: "/strawberry.jpg"
+        img: "https://www.simplyhappyfoodie.com/wp-content/uploads/2019/05/instant-pot-strawberry-jam-2b.jpg"
     },
     {
         name: "Orange Jam",
@@ -95,8 +85,7 @@ const menu = [
         price: 10,
         bestSeller: "no",
         drink: "no",
-        jam: "yes",
-        img: "/orange.jpg"
+        img: "https://www.abakershouse.com/wp-content/uploads/2018/02/orange-lemon-marmalade-in-a-jar.jpg"
     },
     {
         name: "Apple Jam",
@@ -104,9 +93,6 @@ const menu = [
         price: 10,
         bestSeller: "no",
         drink: "no",
-        jam: "yes",
-        img: "/apple.jpg"
+        img: "https://crockpotladies.com/wp-content/uploads/2011/12/Crock-Pot-Apple-Jelly-05.jpg"
     }
 ];
-
-export { menu };
