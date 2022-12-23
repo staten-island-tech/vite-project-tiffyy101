@@ -1,29 +1,38 @@
 import "/styles/style.css";
-import { menu } from "./menu";
-import { DOMSelectors } from "./dom";
+import {menu} from "./menu";
+import {DOMSelectors} from "./dom";
 console.log("menu");
 
 function createMenu() {
     menu.forEach((menu) =>
-        DOMSelectors.mainDiv.insertAdjacentHTML
-            ("beforeend",
-                `          
-          <div id="mainCard" class="mainCard">          
+    DOMSelectors.mainDiv.insertAdjacentHTML
+    ("beforeend",
+            `
           <h2>${menu.name}</h2>
-          <img class="img" src="${menu.img}" />
+          <img class="img" src=${menu.img} alt=""/>
           <p id="outputText">Price: ${menu.price}</p>
           <p id="outputText">Info: ${menu.info}</p>
-          <button id="buy" class="buy">Choose</button>
+          <button id="buy">Choose</button>
           </div>
-        ` ));
-}
-   
+          <div id="mainCard">
+          
 
-function food() {
-    menu
-    .forEach((food) => createMenu(food));
-}
-food();
+        ` )    
+        );
+} 
+
+document.querySelector(".btn").addEventListener("click", function () {
+    if(document.body.classList.contains("warm")) {
+        document.body.classList.add("cool");
+        document.body.classList.remove("warm");
+    } else {
+        document.body.classList.add("warm");
+        document.body.classList.remove("cool");
+    }
+});
+menu
+.forEach((menu) => createMenu(menu));
+
 
 function bestSeller() {
     DOMSelectors.mainDiv.innerHTML=" ";
@@ -33,7 +42,6 @@ function bestSeller() {
             card(food);
         });
 }
-
 function drink() {
     DOMSelectors.mainDiv.innerHTML=" ";
     menu
@@ -42,7 +50,6 @@ function drink() {
             card(food);
         });
 }
-
 function jam() {
     DOMSelectors.mainDiv.innerHTML=" ";
     menu
@@ -51,25 +58,12 @@ function jam() {
             card(food);
         });
 }
-
 DOMSelectors.bestSeller.addEventListener("click", function () {
     bestSeller();
   });
-
 DOMSelectors.drink.addEventListener("click", function () {
     drink();
 });
-
 DOMSelectors.jam.addEventListener("click", function () {
     jam();
-  });
-
-document.querySelector(".btn").addEventListener("click", function () {
-    if (document.body.classList.contains("warm")) {
-        document.body.classList.add("cool");
-        document.body.classList.remove("warm");
-    } else {
-        document.body.classList.add("warm");
-        document.body.classList.remove("cool");
-    }
 });

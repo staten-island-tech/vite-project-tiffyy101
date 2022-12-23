@@ -96,3 +96,5 @@ const menu = [
         img: "https://crockpotladies.com/wp-content/uploads/2011/12/Crock-Pot-Apple-Jelly-05.jpg"
     }
 ];
+
+export { menu };
