@@ -4,6 +4,8 @@ import { DOMSelectors } from "./dom";
 console.log("menu");
 
 function createMenu(food) {
+    menu.forEach((menu) =>
+    function createMenu(food) {
         DOMSelectors.mainDiv.insertAdjacentHTML
             ("beforeend",
                 `          
@@ -15,7 +17,8 @@ function createMenu(food) {
           <button id="buy" class="buy">Choose</button>
           </div>
         ` );
-}
+});
+}    
 
 function all() {
     menu
