@@ -3,9 +3,8 @@ import { menu } from "./menu";
 import { DOMSelectors } from "./dom";
 console.log("menu");
 
-function createMenu(food) {
+function createMenu() {
     menu.forEach((menu) =>
-    function createMenu(food) {
         DOMSelectors.mainDiv.insertAdjacentHTML
             ("beforeend",
                 `          
@@ -16,15 +15,15 @@ function createMenu(food) {
           <p id="outputText">Info: ${menu.info}</p>
           <button id="buy" class="buy">Choose</button>
           </div>
-        ` );
-});
-}    
+        ` ));
+}
+   
 
-function all() {
+function food() {
     menu
     .forEach((food) => createMenu(food));
 }
-all();
+food();
 
 function bestSeller() {
     DOMSelectors.mainDiv.innerHTML=" ";
