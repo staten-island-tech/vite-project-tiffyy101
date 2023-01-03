@@ -3,6 +3,7 @@
   --h2: 2.441rem;
   --h3: 1.953rem;
   --h4: 1.563rem;
+  --h5: 1rem;
 }
 
 .warm {
@@ -65,7 +66,14 @@ h1 {
   border-color: var(--fourth);
 }
 
+.buy {
+  color: var(--second);
+  font-size: var(--h5);
+  border-color: var(--fourth);
+}
+
 .img {
   width: 50vh;
   height: 40vh;
+  border-color: var(--second);
 }

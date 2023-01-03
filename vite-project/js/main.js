@@ -12,7 +12,7 @@ function createMenu() {
           <img class="img" src=${menu.img} alt=""/>
           <p id="outputText">Price: ${menu.price}</p>
           <p id="outputText">Info: ${menu.info}</p>
-          <button id="buy">Choose</button>
+          <button id="buy" class="buy">Choose</button>
           </div>
           <div id="mainCard">
           
