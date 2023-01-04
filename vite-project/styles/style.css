@@ -76,4 +76,17 @@ h1 {
   width: 50vh;
   height: 40vh;
   border-color: var(--second);
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  transition: 1s ease;
+  transition: 1s ease;
+}
+
+.img:hover {
+  transform: scale(1.1);
+  -webkit-transform: rotateZ(-10deg);
+  -ms-transform: rotateZ(-10deg);
+  transform: rotateZ(-10deg);
+  transition: 1s ease;
+  transition: 1s ease
 }

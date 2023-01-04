@@ -37,27 +37,61 @@ menu
 function bestSeller() {
     DOMSelectors.mainDiv.innerHTML=" ";
     menu
-        .filter((food) => food.bestSeller === "yes")
-        .forEach(food => {
-            card(food);
+        .filter((bestSeller) => bestSeller.bestSeller === "yes")
+        .forEach(bestSeller => {
+            DOMSelectors.mainDiv.insertAdjacentHTML
+            ("beforeend",
+            `
+          <h2>${bestSeller.name}</h2>
+          <img class="img" src=${bestSeller.img} alt=""/>
+          <p id="outputText">Price: ${bestSeller.price}</p>
+          <p id="outputText">Info: ${bestSeller.info}</p>
+          <button id="buy" class="buy">Choose</button>
+          </div>
+          <div id="mainCard">`
+          );
         });
 }
+
 function drink() {
     DOMSelectors.mainDiv.innerHTML=" ";
     menu
-        .filter((food) => food.drink === "yes")
-        .forEach(food => {
-            card(food);
+        .filter((drink) => drink.drink === "yes")
+        .forEach(drink => {
+            DOMSelectors.mainDiv.insertAdjacentHTML
+            ("beforeend",
+            `
+          <h2>${drink.name}</h2>
+          <img class="img" src=${drink.img} alt=""/>
+          <p id="outputText">Price: ${drink.price}</p>
+          <p id="outputText">Info: ${drink.info}</p>
+          <button id="buy" class="buy">Choose</button>
+          </div>
+          <div id="mainCard">`
+          );
         });
 }
 function jam() {
     DOMSelectors.mainDiv.innerHTML=" ";
     menu
-        .filter((food) => food.jam === "yes")
-        .forEach(food => {
-            card(food);
+        .filter((jam) => jam.jam === "yes")
+        .forEach(jam => {
+            DOMSelectors.mainDiv.insertAdjacentHTML
+            ("beforeend",
+            `
+          <h2>${jam.name}</h2>
+          <img class="img" src=${jam.img} alt=""/>
+          <p id="outputText">Price: ${jam.price}</p>
+          <p id="outputText">Info: ${jam.info}</p>
+          <button id="buy" class="buy">Choose</button>
+          </div>
+          <div id="mainCard">`
+          );
         });
 }
+
+
+
 DOMSelectors.bestSeller.addEventListener("click", function () {
     bestSeller();
   });
