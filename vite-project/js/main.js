@@ -4,7 +4,7 @@ import {DOMSelectors} from "./dom";
 console.log("menu");
 
 function createMenu() {
-    menu.forEach((menu) =>
+    menu.forEach((menu) => {
     DOMSelectors.mainDiv.insertAdjacentHTML
     ("beforeend",
             `
@@ -15,10 +15,9 @@ function createMenu() {
           <button id="buy" class="buy">Choose</button>
           </div>
           <div id="mainCard">
-          
 
         ` )    
-        );
+    });
 } 
 
 document.querySelector(".btn").addEventListener("click", function () {
@@ -32,7 +31,6 @@ document.querySelector(".btn").addEventListener("click", function () {
 });
 menu
 .forEach((menu) => createMenu(menu));
-
 
 function bestSeller() {
     DOMSelectors.mainDiv.innerHTML=" ";
@@ -71,6 +69,7 @@ function drink() {
           );
         });
 }
+
 function jam() {
     DOMSelectors.mainDiv.innerHTML=" ";
     menu
@@ -89,8 +88,6 @@ function jam() {
           );
         });
 }
-
-
 
 DOMSelectors.bestSeller.addEventListener("click", function () {
     bestSeller();
