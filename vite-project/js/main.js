@@ -89,6 +89,7 @@ function jam() {
         });
 }
 
+
 DOMSelectors.bestSeller.addEventListener("click", function () {
     bestSeller();
   });
@@ -98,3 +99,29 @@ DOMSelectors.drink.addEventListener("click", function () {
 DOMSelectors.jam.addEventListener("click", function () {
     jam();
 });
+
+// function clear() {
+//     DOMSelectors.mainDiv.innerHTML = "";
+// }
+
+// initial();
+
+// DOMSelectors.mainDiv.addEventListener("click", function () {
+//     clear();
+//     initial();
+//   });
+
+// DOMSelectors.bestSeller.addEventListener("click", function () {
+//     clear();
+//     bestSeller();
+//   });
+
+// DOMSelectors.drink.addEventListener("click", function () {
+//     clear();
+//     drink();
+// });
+
+// DOMSelectors.jam.addEventListener("click", function () {
+//     clear();
+//     jam();
+// });
