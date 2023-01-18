@@ -5,6 +5,7 @@ console.log("menu");
 
 function createMenu() {
     menu.forEach((menu) => {
+    DOMSelectors.display.innerHTML = " ";
     DOMSelectors.mainDiv.insertAdjacentHTML
     ("beforeend",
             `
@@ -32,10 +33,10 @@ document.querySelector(".btn").addEventListener("click", function () {
 menu
 .forEach((menu) => createMenu(menu));
 
-function bestSeller() {
-    DOMSelectors.mainDiv.innerHTML=" ";
-    menu
-        .filter((bestSeller) => bestSeller.bestSeller === "yes")
+const bestSeller = document.getElementById("bestSeller");
+    bestSeller.addEventListener("click", function () {
+        DOMSelectors.display.innerHTML = " ";
+        menu.filter((bestSeller) => bestSeller.bestSeller === "yes")
         .forEach(bestSeller => {
             DOMSelectors.mainDiv.insertAdjacentHTML
             ("beforeend",
@@ -49,12 +50,13 @@ function bestSeller() {
           <div id="mainCard">`
           );
         });
-}
+    });
 
-function drink() {
-    DOMSelectors.mainDiv.innerHTML=" ";
-    menu
-        .filter((drink) => drink.drink === "yes")
+
+    const drink = document.getElementById("drink");
+    drink.addEventListener("click", function () {
+        DOMSelectors.display.innerHTML = " ";
+        menu.filter((drink) => drink.drink === "yes")
         .forEach(drink => {
             DOMSelectors.mainDiv.insertAdjacentHTML
             ("beforeend",
@@ -68,12 +70,14 @@ function drink() {
           <div id="mainCard">`
           );
         });
-}
+    });
+    
+        
 
-function jam() {
-    DOMSelectors.mainDiv.innerHTML=" ";
-    menu
-        .filter((jam) => jam.jam === "yes")
+    const jam = document.getElementById("jam");
+    jam.addEventListener("click", function () {
+        DOMSelectors.display.innerHTML = " ";
+        menu.filter((jam) => jam.jam === "yes")
         .forEach(jam => {
             DOMSelectors.mainDiv.insertAdjacentHTML
             ("beforeend",
@@ -87,41 +91,30 @@ function jam() {
           <div id="mainCard">`
           );
         });
-}
+    });
 
+ function clear() {
+     DOMSelectors.output.innerHTML = "";
+ }
 
-DOMSelectors.bestSeller.addEventListener("click", function () {
-    bestSeller();
-  });
-DOMSelectors.drink.addEventListener("click", function () {
-    drink();
-});
-DOMSelectors.jam.addEventListener("click", function () {
-    jam();
-});
+ initial();
 
-// function clear() {
-//     DOMSelectors.mainDiv.innerHTML = "";
-// }
+ DOMSelectors.mainDiv.addEventListener("click", function () {
+     clear();
+     initial();
+   });
 
-// initial();
+ DOMSelectors.bestSeller.addEventListener("click", function () {
+     clear();
+     bestSeller();
+   });
 
-// DOMSelectors.mainDiv.addEventListener("click", function () {
-//     clear();
-//     initial();
-//   });
+ DOMSelectors.drink.addEventListener("click", function () {
+     clear();
+     drink();
+ });
 
-// DOMSelectors.bestSeller.addEventListener("click", function () {
-//     clear();
-//     bestSeller();
-//   });
-
-// DOMSelectors.drink.addEventListener("click", function () {
-//     clear();
-//     drink();
-// });
-
-// DOMSelectors.jam.addEventListener("click", function () {
-//     clear();
-//     jam();
-// });
+ DOMSelectors.jam.addEventListener("click", function () {
+     clear();
+     jam();
+ });
